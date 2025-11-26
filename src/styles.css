@@ -1,0 +1,266 @@
+/* ====== PALETA LOVecraft Techno ====== */
+:root {
+  --bg: #050607;
+  --bg2: #0b0d0f;
+  --panel: #101317;
+  --border: #1c2229;
+  --text: #dbe4ec;
+  --text-dim: #8ea1b2;
+  --highlight: #38f7d3;
+  --highlight2: #1ca38a;
+  --radius: 14px;
+  --shadow: 0 0 18px rgba(0, 255, 170, 0.08);
+  --glow: 0 0 12px rgba(0, 255, 170, 0.25);
+}
+
+/* RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+}
+
+/* ROOT */
+.app-root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* HEADER */
+.app-header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(10,14,18,0.7);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* MAIN */
+.app-main {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PANEL */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.panel-title {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  padding: 10px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+}
+
+.input.small {
+  width: 80px;
+}
+
+/* BUTTONS */
+.btn, .btn-primary, .btn-secondary {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border-color: var(--highlight2);
+  box-shadow: var(--glow);
+}
+
+.sm { padding: 4px 8px !important; font-size: 0.8rem !important; }
+
+.btn-primary {
+  background: var(--highlight2);
+  border: 1px solid var(--highlight);
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--highlight);
+  box-shadow: var(--glow);
+}
+
+.btn-secondary {
+  border-color: var(--highlight2);
+  color: var(--highlight);
+}
+
+.btn-secondary:hover {
+  border-color: var(--highlight);
+  box-shadow: var(--glow);
+}
+
+/* TEXT & LAYOUT */
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.vstack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.placeholder {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+/* CARD */
+.card-title {
+  font-size: 1.2rem;
+  margin: 0 0 12px 0;
+}
+
+.tag {
+  background: var(--highlight2);
+  padding: 2px 8px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 0.75rem;
+}
+
+/* ATTRIBUTES */
+.subpanel {
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.stat-label { font-size: 0.9rem; }
+.stat-info { font-size: 0.75rem; opacity: 0.75; }
+.stat-buttons { display: flex; gap: 8px; align-items: center; }
+
+.value {
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.value.big {
+  font-size: 1.2rem;
+}
+
+/* INVENTORY */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+.item-title {
+  font-weight: 600;
+}
+
+.item-desc {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* DICE */
+.dice-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dice {
+  width: 60px;
+  height: 60px;
+  background: var(--bg2);
+  border: 1px solid var(--highlight2);
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: var(--glow);
+}
+
+.rolling {
+  transform: rotateY(360deg) scale(1.1);
+}
+
+.dice-display {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dice-history {
+  text-align: right;
+}
+
+.small-text {
+  opacity: 0.7;
+  font-size: 0.75rem;
+}
+
+.dice-last {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.5;
+  margin: 20px 0;
+  font-size: 0.75rem;
+}
