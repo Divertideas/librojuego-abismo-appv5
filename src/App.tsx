@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState } from "react";
 
 // -------------------- Datos base --------------------
 const BASE_STATS = ["fuerza", "habilidad", "conocimiento", "observacion"] as const;
@@ -16,6 +16,7 @@ type Item = {
   nombre: string;
   descripcion?: string;
   efectos?: Partial<Record<StatKey, number>>;
+  tag?: string; // <-- AÑADE ESTA LÍNEA
 };
 
 const PERSONAJES: CharacterDef[] = [
