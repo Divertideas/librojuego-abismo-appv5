@@ -215,6 +215,11 @@ const ITEMS_DB: Item[] = [
     nombre: "Grimorio",
     descripcion: "En una prueba de Conocimiento puedes volver a tirar y DEBES quedarte con el nuevo resultado.",
   },
+  {
+    id: "Sello demoniaco",
+    nombre: "Sello demoniaco",
+    descripcion: "Te permite tirar de nuevo el dado si fallas",
+  },
 ];
 
 // -------------------- Tipos --------------------
