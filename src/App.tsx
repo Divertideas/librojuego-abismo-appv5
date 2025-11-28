@@ -56,6 +56,13 @@ const ITEMS_DB: Item[] = [
     tag: "arma",
   },
   {
+    id: "Porra",
+    nombre: "Porra",
+    descripcion: "+1 a tu base de Fuerza mientras lo lleves.",
+    efectos: { fuerza: 1 },
+    tag: "arma",
+  },
+  {
     id: "llave_sacrilega",
     nombre: "Llave sacrílega",
     descripcion: "Objeto especial (efecto narrativo).",
