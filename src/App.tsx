@@ -111,6 +111,12 @@ const ITEMS_DB: Item[] = [
     efectos: { observacion: 2 },
   },
   {
+    id: "Anteojos rotos",
+    nombre: "Anteojos rotos",
+    descripcion: "+1 a tu base de Observación mientras lo lleves.",
+    efectos: { observacion: 1 },
+  },
+  {
     id: "conjuro_suerte",
     nombre: "Conjuro de suerte",
     descripcion: "Vuelve a tirar los dados. Se descarta tras usarlo.",
